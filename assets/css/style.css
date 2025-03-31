@@ -132,10 +132,35 @@ p {
     color: #555;
 }
 
-/* About Section */
-#about {
-    background-color: #fff;
+/* Estilo para a seção 'Sobre Mim' com fundo sutil */
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    text-align: left;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.05); /* Cor preta bem clara com opacidade */
+    border-radius: 10px; /* Bordas arredondadas */
 }
+
+.about-text {
+    flex: 1; /* Ocupa o espaço disponível */
+}
+
+.about-image {
+    flex: 1; /* Ocupa o espaço disponível */
+    display: flex;
+    justify-content: center;
+}
+
+.about-image img {
+    width: 100%; /* A imagem ocupa todo o espaço disponível */
+    max-width: 300px; /* Define um tamanho máximo */
+    border-radius: 10px; /* Adiciona cantos arredondados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Efeito de sombra */
+}
+
 
 /* Work Section */
 #work {
