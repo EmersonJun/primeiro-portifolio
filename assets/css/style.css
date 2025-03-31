@@ -13,19 +13,43 @@ body {
     background-color: #f9f9f9;
 }
 
+/* Efeito fade-in de baixo para cima */
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(20px);  /* Começa 20px abaixo */
+    transition: opacity 0.6s ease, transform 0.6s ease;  /* Transição suave */
+}
+
+/* Quando o elemento estiver visível, ele recebe a animação */
+.fade-in-up.visible {
+    opacity: 1;
+    transform: translateY(0);  /* O elemento chega na sua posição original */
+}
+
+
 /* Header */
 header {
     background-color: #1d1d1f;
     color: #fff;
     padding: 50px 0;
     text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
 header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
     padding: 20px 10%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 header nav .logo {
@@ -50,8 +74,30 @@ header nav ul li a {
     font-size: 14px;
 }
 
+/* Estilo para a classe 'icons' */
+.icons {
+    display: flex; /* Usando flexbox para alinhar as imagens horizontalmente */
+    justify-content: center; /* Centraliza as imagens na tela */
+    gap: 20px; /* Espaçamento entre as imagens */
+    margin-top: 20px; /* Adiciona um espaço superior */
+}
+
+/* Estilo para as imagens dentro de '.icons' */
+.icons img {
+    width: 50px; /* Definindo uma largura fixa para todas as imagens */
+    height: 50px; /* Definindo uma altura fixa para todas as imagens */
+    object-fit: contain; /* Garante que as imagens não distorçam */
+    transition: transform 0.3s ease; /* Transição suave para o efeito de hover */
+}
+
+/* Efeito de hover nas imagens */
+.icons img:hover {
+    transform: scale(1.1); /* Aumenta o tamanho da imagem ao passar o mouse */
+}
+/* Hero section */
 .hero {
     padding: 60px 20px;
+    z-index: 2;
 }
 
 .hero h1 {
