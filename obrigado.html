@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Obrigado</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #00796b;
+      --secondary-color: #009688;
+      --bg-light: #f0f4f8;
+      --text-color: #333;
+      --muted-text: #777;
+      --card-bg: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-light);
+      color: var(--text-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      animation: fadeIn 1s ease-out;
+    }
+
+    .thank-you-container {
+      background: var(--card-bg);
+      padding: 50px;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      text-align: center;
+      max-width: 500px;
+      animation: fade-in-up 1s ease-out;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: var(--primary-color);
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.15rem;
+      color: var(--text-color);
+    }
+
+    .signature {
+      margin-top: 30px;
+      font-style: italic;
+      color: var(--muted-text);
+      font-size: 0.95rem;
+    }
+
+    .fade-in-up {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fade-in-up 1s forwards;
+    }
+
+    @keyframes fade-in-up {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      } to {
+        opacity: 1;
+      }
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      background-color: var(--secondary-color);
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #00796b;
+    }
+  </style>
+</head>
+<body>
+  <div class="thank-you-container fade-in-up">
+    <h1>Obrigado pelo seu e-mail!</h1>
+    <p>Sua mensagem foi recebida com sucesso. Em breve entrarei em contato com você.</p>
+    <div class="signature">
+      Atenciosamente,<br>
+      Emerson Junior
+    </div>
+    <a href="index.html" class="btn">Voltar ao Portfólio</a>
+  </div>
+</body>
+</html>

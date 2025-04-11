@@ -12,7 +12,7 @@
     <!-- Header -->
     <header>
         <nav>
-            <div class="logo fade-in-up">Nome Sobrenome</div>
+            <div class="logo fade-in-up">Emerson Junior</div>
             <ul>
                 <li><a href="#about" class="fade-in-up">Sobre</a></li>
                 <li><a href="#work" class="fade-in-up">Trabalhos</a></li>
@@ -20,8 +20,8 @@
             </ul>
         </nav>
         <div class="hero fade-in-up">
-            <h1>Desenvolvedor Web | Criativo | Apaixonado por Tecnologia</h1>
-            <p>Transformando ideias em experiências digitais incríveis</p>
+            <h1>Desenvolvedor Full Stack </h1>
+            <p>Não é a linguagem de programação que define o programador, mas sim sua lógica.</p>
             <div class="icons">
             <img src="./assets/img/icons8-c-50.png" alt="C#">
             <img src="./assets/img/github.png" alt="github">
@@ -38,6 +38,24 @@
             </div>
             <div class="about-image">
                 <img src="./assets/img/imagem1.jpg" alt="Minha Foto">
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section bg-dark fade-in-up">
+        <div class="container">
+            <h2>Experiências</h2>
+            <div class="experience-timeline">
+                <div class="experience-item">
+                    <h3>Desenvolvedor Front-End</h3>
+                    <span>Empresa X - Jan 2022 ~ Dez 2023</span>
+                    <p>Atuei no desenvolvimento de interfaces web responsivas, utilizando React, TailwindCSS e integração com APIs REST.</p>
+                </div>
+                <div class="experience-item">
+                    <h3>Estágio em Desenvolvimento</h3>
+                    <span>Startup Y - Jul 2021 ~ Dez 2021</span>
+                    <p>Auxiliei na criação de páginas e automações com JavaScript, além de manutenção de projetos internos da empresa.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -75,11 +93,25 @@
     <!-- Contact Section -->
     <section id="contact" class="section fade-in-up">
         <div class="container">
-            <h2>Contato</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet libero ut ligula...</p>
-        </div>
-    </section>
+          <h2>Contato</h2>
+          
 
+          <!-- <form class="contact-form" action="77ee81edb5eca7ea80a5a4923559148b" method="POST"> -->
+            <!-- <input type="text" name="name" placeholder="Seu nome" required>
+            <input type="email" name="email" placeholder="Seu e-mail" required>
+            <textarea name="message" placeholder="Sua mensagem..." required></textarea>
+            
+            <button type="submit">Enviar</button>
+          </form> -->
+          <form class="contact-form" action="https://formsubmit.co/emersonnjunior2006@gmail.com" method="POST">
+            <input type="text" name="name" placeholder="Seu nome" required>
+            <input type="email" name="email" placeholder="Seu e-mail" required>
+            <textarea name="message" placeholder="Sua mensagem..." required></textarea>
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/obrigado.html">
+            <button type="submit">enviar</button>
+       </form>
+      </section>
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -93,5 +125,6 @@
     </footer>
 
     <script src="./assets/js/script.js"></script>
+    
 </body>
 </html>

@@ -13,43 +13,21 @@ body {
     background-color: #f9f9f9;
 }
 
-/* Efeito fade-in de baixo para cima */
-.fade-in-up {
-    opacity: 0;
-    transform: translateY(20px);  /* Começa 20px abaixo */
-    transition: opacity 0.6s ease, transform 0.6s ease;  /* Transição suave */
-}
-
-/* Quando o elemento estiver visível, ele recebe a animação */
-.fade-in-up.visible {
-    opacity: 1;
-    transform: translateY(0);  /* O elemento chega na sua posição original */
-}
-
-
 /* Header */
 header {
     background-color: #1d1d1f;
     color: #fff;
-    padding: 50px 0;
-    text-align: center;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+    justify-content: space-between;
 }
 
 header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
     padding: 20px 10%;
-    position: absolute;
-    top: 0;
-    left: 0;
 }
 
 header nav .logo {
@@ -74,30 +52,13 @@ header nav ul li a {
     font-size: 14px;
 }
 
-/* Estilo para a classe 'icons' */
-.icons {
-    display: flex; /* Usando flexbox para alinhar as imagens horizontalmente */
-    justify-content: center; /* Centraliza as imagens na tela */
-    gap: 20px; /* Espaçamento entre as imagens */
-    margin-top: 20px; /* Adiciona um espaço superior */
-}
-
-/* Estilo para as imagens dentro de '.icons' */
-.icons img {
-    width: 50px; /* Definindo uma largura fixa para todas as imagens */
-    height: 50px; /* Definindo uma altura fixa para todas as imagens */
-    object-fit: contain; /* Garante que as imagens não distorçam */
-    transition: transform 0.3s ease; /* Transição suave para o efeito de hover */
-}
-
-/* Efeito de hover nas imagens */
-.icons img:hover {
-    transform: scale(1.1); /* Aumenta o tamanho da imagem ao passar o mouse */
-}
-/* Hero section */
 .hero {
     padding: 60px 20px;
-    z-index: 2;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero h1 {
@@ -108,6 +69,13 @@ header nav ul li a {
 
 .hero p {
     font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero .icons img {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
 }
 
 /* Seções */
@@ -132,35 +100,68 @@ p {
     color: #555;
 }
 
-/* Estilo para a seção 'Sobre Mim' com fundo sutil */
+/* About Section */
+#about {
+    background-color: #fff;
+}
+
 .about-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 40px;
     text-align: left;
-    padding: 40px;
-    background-color: rgba(0, 0, 0, 0.05); /* Cor preta bem clara com opacidade */
-    border-radius: 10px; /* Bordas arredondadas */
 }
 
 .about-text {
-    flex: 1; /* Ocupa o espaço disponível */
+    flex: 1;
 }
 
 .about-image {
-    flex: 1; /* Ocupa o espaço disponível */
+    flex: 1;
     display: flex;
     justify-content: center;
 }
 
 .about-image img {
-    width: 100%; /* A imagem ocupa todo o espaço disponível */
-    max-width: 300px; /* Define um tamanho máximo */
-    border-radius: 10px; /* Adiciona cantos arredondados */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Efeito de sombra */
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
 
+/* Experience Section */
+#experience {
+    background-color: #2a2a2d;
+    color: #fff;
+}
+
+.experience-timeline {
+    margin-top: 40px;
+    text-align: left;
+}
+
+.experience-item {
+    margin-bottom: 30px;
+}
+
+.experience-item h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.experience-item span {
+    font-size: 14px;
+    display: block;
+    margin-bottom: 10px;
+    color: #bbb;
+}
+
+.experience-item p {
+    font-size: 16px;
+    color: #ddd;
+}
 
 /* Work Section */
 #work {
@@ -220,6 +221,43 @@ p {
 /* Contact Section */
 #contact {
     background-color: #fff;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 40px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    height: 120px;
+}
+
+.contact-form button {
+    padding: 15px;
+    border: none;
+    background-color: #1d1d1f;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #333;
 }
 
 /* Footer */
