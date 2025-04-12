@@ -170,6 +170,44 @@ p {
     font-size: 16px;
     color: #ddd;
 }
+.experience-details {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.6s ease;
+}
+
+.experience-item.open .experience-details {
+  max-height: 200px; /* ou mais, se a descrição for longa */
+}
+
+.experience-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  background-color: #1c1c1c;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.experience-summary img {
+  width: 40px;
+  height: 40px;
+}
+
+.toggle-btn {
+  padding: 6px 12px;
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.toggle-btn:hover {
+  background-color: #666;
+}
 
 /* Work Section */
 #work {
