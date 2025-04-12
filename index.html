@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio - Nome Sobrenome</title>
+    <title>Portfólio - Emerson Junior</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
+
 </head>
 <body>
 
@@ -20,11 +21,14 @@
             </ul>
         </nav>
         <div class="hero fade-in-up">
-            <h1>Desenvolvedor Full Stack </h1>
+            <h1>Desenvolvedor Full Stack</h1>
             <p>Não é a linguagem de programação que define o programador, mas sim sua lógica.</p>
             <div class="icons">
-            <img src="./assets/img/icons8-c-50.png" alt="C#">
-            <img src="./assets/img/github.png" alt="github">
+                <img src="./assets/img/icons8-c-50.png" alt="C#">
+                <img src="./assets/img/github.png" alt="github">
+                <img src="./assets/img/java.png" alt="java">
+                <img src="./assets/img/php.png" alt="php">
+                <img src="./assets/img/script-java.png" alt="js">
             </div>
         </div>
     </header>
@@ -37,7 +41,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus hendrerit massa...</p>
             </div>
             <div class="about-image">
-                <img src="./assets/img/imagem1.jpg" alt="Minha Foto">
+                <img src="./assets/img/1000475004.jpg" alt="Minha Foto">
             </div>
         </div>
     </section>
@@ -60,58 +64,74 @@
         </div>
     </section>
 
-    <!-- Work Section -->
+    <!-- Experience Section -->
     <section id="work" class="section bg-light fade-in-up">
         <div class="container">
-            <h2>Meus Projetos</h2>
-            <div class="work-grid">
-                <div class="work-item fade-in-up">
-                    <img src="./assets/img/imagem1.jpg" alt="Projeto 1">
-                    <div class="work-overlay">
-                        <h3>Projeto 1</h3>
-                        <p>Descrição do projeto 1.</p>
-                    </div>
+          <h2>Meus Projetos</h2>
+      
+          <div class="carousel-wrapper">
+            <button class="carousel-btn left" onclick="scrollCarousel(-1)">&#10094;</button>
+      
+            <div class="carousel-container" id="carouselContainer">
+              <div class="carousel-track" id="carouselTrack">
+                <div class="work-item">
+                  <img src="./assets/img/imagem1.jpg" alt="Projeto 1">
+                  <div class="work-overlay">
+                    <h3>Projeto 1</h3>
+                    <p>Descrição do projeto 1.</p>
+                  </div>
                 </div>
-                <div class="work-item fade-in-up">
-                    <img src="./assets/img/imagem1.jpg" alt="Projeto 2">
-                    <div class="work-overlay">
-                        <h3>Projeto 2</h3>
-                        <p>Descrição do projeto 2.</p>
-                    </div>
+                <div class="work-item">
+                  <img src="./assets/img/imagem1.jpg" alt="Projeto 2">
+                  <div class="work-overlay">
+                    <h3>Projeto 2</h3>
+                    <p>Descrição do projeto 2.</p>
+                  </div>
                 </div>
-                <div class="work-item fade-in-up">
-                    <img src="./assets/img/imagem1.jpg" alt="Projeto 3">
-                    <div class="work-overlay">
-                        <h3>Projeto 3</h3>
-                        <p>Descrição do projeto 3.</p>
-                    </div>
+                <div class="work-item">
+                  <img src="./assets/img/imagem1.jpg" alt="Projeto 3">
+                  <div class="work-overlay">
+                    <h3>Projeto 3</h3>
+                    <p>Descrição do projeto 3.</p>
+                  </div>
                 </div>
+                <div class="work-item">
+                  <img src="./assets/img/imagem1.jpg" alt="Projeto 4">
+                  <div class="work-overlay">
+                    <h3>Projeto 4</h3>
+                    <p>Descrição do projeto 4.</p>
+                  </div>
+                </div>
+                <div class="work-item">
+                  <img src="./assets/img/imagem1.jpg" alt="Projeto 5">
+                  <div class="work-overlay">
+                    <h3>Projeto 5</h3>
+                    <p>Descrição do projeto 5.</p>
+                  </div>
+                </div>
+              </div>
             </div>
+      
+            <button class="carousel-btn right" onclick="scrollCarousel(1)">&#10095;</button>
+          </div>
         </div>
-    </section>
+      </section>
 
     <!-- Contact Section -->
     <section id="contact" class="section fade-in-up">
         <div class="container">
-          <h2>Contato</h2>
-          
+            <h2>Contato</h2>
+            <form class="contact-form" action="https://formsubmit.co/emersonnjunior2006@gmail.com" method="POST">
+                <input type="text" name="name" placeholder="Seu nome" required>
+                <input type="email" name="email" placeholder="Seu e-mail" required>
+                <textarea name="message" placeholder="Sua mensagem..." required></textarea>
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/obrigado.html">
+                <button type="submit">enviar</button>
+            </form>
+        </div>
+    </section>
 
-          <!-- <form class="contact-form" action="77ee81edb5eca7ea80a5a4923559148b" method="POST"> -->
-            <!-- <input type="text" name="name" placeholder="Seu nome" required>
-            <input type="email" name="email" placeholder="Seu e-mail" required>
-            <textarea name="message" placeholder="Sua mensagem..." required></textarea>
-            
-            <button type="submit">Enviar</button>
-          </form> -->
-          <form class="contact-form" action="https://formsubmit.co/emersonnjunior2006@gmail.com" method="POST">
-            <input type="text" name="name" placeholder="Seu nome" required>
-            <input type="email" name="email" placeholder="Seu e-mail" required>
-            <textarea name="message" placeholder="Sua mensagem..." required></textarea>
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_next" value="http://127.0.0.1:5500/obrigado.html">
-            <button type="submit">enviar</button>
-       </form>
-      </section>
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -120,11 +140,9 @@
                 <a href="#" class="social-link">LinkedIn</a>
                 <a href="#" class="social-link">Twitter</a>
             </div>
-            <p>&copy; 2025 Nome Sobrenome. Todos os direitos reservados.</p>
+            <p>&copy; 2025 Emerson Junior. Todos os direitos reservados.</p>
         </div>
     </footer>
-
-    <script src="./assets/js/script.js"></script>
-    
 </body>
+ <script src="./assets/js/script.js"></script>
 </html>

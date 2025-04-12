@@ -28,6 +28,13 @@ header nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 10%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Garante que fique na frente dos outros elementos */
+    background-color: #1d1d1f; /* Ou qualquer cor de fundo que combine com o seu design */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Opcional: um sombreamento pra destacar */
 }
 
 header nav .logo {
@@ -53,6 +60,7 @@ header nav ul li a {
 }
 
 .hero {
+    margin-top: 80px;
     padding: 60px 20px;
     flex-grow: 1;
     display: flex;
@@ -168,55 +176,42 @@ p {
     background-color: #f0f0f0;
 }
 
-.work-grid {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    margin-top: 40px;
-}
-
-.work-item {
+.carousel-wrapper {
     position: relative;
-    width: 32%;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+  }
+  
+  .carousel-container {
     overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.work-item img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-}
-
-.work-item:hover img {
-    transform: scale(1.1);
-}
-
-.work-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    text-align: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.work-item:hover .work-overlay {
-    opacity: 1;
-}
-
-.work-overlay h3 {
-    font-size: 22px;
-    font-weight: 600;
-}
-
-.work-overlay p {
-    font-size: 14px;
-}
+  }
+  
+  .carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .carousel-btn {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 2;
+  }
+  
+  .carousel-btn:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .work-item {
+    flex: 0 0 calc(100% / 3);
+    box-sizing: border-box;
+    padding: 0 10px;
+  }
 
 /* Contact Section */
 #contact {
