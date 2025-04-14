@@ -37,10 +37,13 @@ header nav {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Opcional: um sombreamento pra destacar */
 }
 
+
 header nav .logo {
     font-size: 24px;
     font-weight: 600;
+    padding-right: 43%;
 }
+
 
 header nav ul {
     list-style: none;
@@ -390,6 +393,9 @@ p {
     transform: scale(1.08);
     z-index: 10; /* Sobe acima dos vizinhos */
   }
+  .work-item img {
+    border-radius: 10px;
+  }
 
 /* Contact Section */
 #contact {
@@ -477,3 +483,66 @@ footer {
 footer p {
     font-size: 14px;
 }
+
+
+
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 4px; /* quanto menor, mais próximo (pode até usar 2px ou 0) */
+}
+
+.logo-wrapper .toggle-theme {
+    margin-left: 0; /* garante que não tenha espaçamento extra */
+    padding: 4px 6px; /* opcional: deixa o botão menor e mais delicado */
+    font-size: 16px;  /* ajusta o tamanho do ícone se quiser menor */
+}
+.toggle-theme {
+    background-color: transparent;
+    border: 2px solid #1d1d1f; /* cor mais suave que #fff */
+    color: #ccc;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 20px;
+    transition: all 0.3s ease;
+}
+.dark-mode header nav {
+    background-color: #1d1d1f !important;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* mantém o sombreamento no dark */
+}
+
+.dark-mode * {
+    background-color: transparent !important;
+    color: #f0f0f0 !important;
+}
+
+.toggle-theme:hover {
+    background-color: #ccc;
+    color: #1d1d1f;
+}
+
+/* Estilos do modo escuro */
+.dark-mode {
+    background-color: #121212;
+    color: #f0f0f0;
+}
+
+.dark-mode header,
+.dark-mode footer,
+.dark-mode .testimonial-card,
+.dark-mode .about-container,
+.dark-mode .skill-card,
+.dark-mode .experience-summary {
+    background-color: #1f1f1f !important;
+    color: #f0f0f0 !important;
+}
+
+.dark-mode .skill-card p,
+.dark-mode .experience-details,
+.dark-mode .testimonial-card p,
+.dark-mode .testimonial-card span {
+    color: #ccc !important;
+}
+
