@@ -51,21 +51,6 @@ checkVisibility();
 
 
 
-let currentIndex = 0;
-
-  function scrollCarousel(direction) {
-    const track = document.getElementById('carouselTrack');
-    const itemWidth = track.querySelector('.work-item').offsetWidth + 0; // 20 = padding
-    const totalItems = track.children.length;
-    const maxIndex = totalItems - 3;
-
-    currentIndex += direction;
-
-    if (currentIndex < 0) currentIndex = 0;
-    if (currentIndex > maxIndex) currentIndex = maxIndex;
-
-    track.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
-  }
 
 
 
@@ -75,19 +60,8 @@ let currentIndex = 0;
 
 
 
-  document.querySelectorAll('.toggle-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const item = btn.closest('.experience-item');
-      item.classList.toggle('open');
+
   
-      btn.textContent = item.classList.contains('open') ? 'Ver menos' : 'Ver mais';
-      
-      // Scroll suave até o item (opcional)
-      if (item.classList.contains('open')) {
-        item.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      }
-    });
-  });
 
 
 
@@ -99,47 +73,24 @@ let currentIndex = 0;
 
 
 
-    const scrollTopBtn = document.getElementById("scrollTopBtn");
-
-    window.onscroll = () => {
-        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-            scrollTopBtn.style.display = "block";
-        } else {
-            scrollTopBtn.style.display = "none";
-        }
-    };
-
-    scrollTopBtn.onclick = () => {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-    };
-
-
-
-
-
-
-
-
-
-
-
-
-
-    const toggleBtn = document.getElementById('themeToggle');
-  toggleBtn.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
     
-    // Trocar ícone do botão 🌙 ↔ ☀️
-    toggleBtn.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
-  });
 
 
 
 
 
 
-  function toggleSidebar() {
-    const section = document.getElementById('skills');
-    section.classList.toggle('sidebar-expanded');
-    section.classList.toggle('sidebar-collapsed');
-  }
+
+
+
+
+
+
+
+  
+
+
+
+
+
+

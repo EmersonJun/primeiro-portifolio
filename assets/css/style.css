@@ -273,10 +273,10 @@ p {
   align-items: flex-start;
   overflow: hidden;
   transition: all 0.4s ease;
-  background-color: #f0f0f0;
+  background-color: #ffffff;
   min-height: 300px;
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
   width: 100%;
   height: 300px;
   position: relative;
@@ -313,7 +313,7 @@ p {
 
 /* Botão de alternância */
 .toggle-button {
-  background-color: #333;
+  background-color: #121212;
   color: white;
   border: none;
   cursor: pointer;
@@ -353,7 +353,7 @@ p {
 .skill-card h3 {
   font-size: 20px;
   margin-bottom: 10px;
-  color: #1d1d1f;
+  color: #121212;
 }
 
 .skill-card p {
@@ -377,7 +377,7 @@ p {
 
 .testimonial-card {
     background-color: #1d1d1f;
-    color: #eee;
+    color: #ffffff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
@@ -467,7 +467,7 @@ p {
 
 /* Contact Section */
 #contact {
-    background-color: #fff;
+    background-color: #f9f9f9;
 }
 
 .contact-form {
@@ -567,8 +567,8 @@ footer p {
 }
 .toggle-theme {
     background-color: transparent;
-    border: 2px solid #1d1d1f; /* cor mais suave que #fff */
-    color: #ccc;
+    border: 2px solid #121212; /* cor mais suave que #fff */
+    color: #121212;
     padding: 8px 12px;
     border-radius: 8px;
     cursor: pointer;
@@ -576,8 +576,9 @@ footer p {
     margin-left: 20px;
     transition: all 0.3s ease;
 }
+
 .dark-mode header nav {
-    background-color: #1d1d1f !important;
+    background-color: #121212 !important;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* mantém o sombreamento no dark */
 }
 
@@ -588,13 +589,28 @@ footer p {
 
 .toggle-theme:hover {
     background-color: #ccc;
-    color: #1d1d1f;
+    color: #121212;
 }
 
 /* Estilos do modo escuro */
 .dark-mode {
-    background-color: #121212;
+    background-color: #1d1d1f;
     color: #f0f0f0;
+}
+/* Barra de rolagem no modo escuro */
+.dark-mode ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.dark-mode ::-webkit-scrollbar-thumb {
+    background-color: #121212;
+    border-radius: 5px;
+    border: 3px solid #121212;
+}
+
+.dark-mode ::-webkit-scrollbar-track {
+    background-color: #333;
 }
 
 .dark-mode header,
@@ -603,8 +619,8 @@ footer p {
 .dark-mode .about-container,
 .dark-mode .skill-card,
 .dark-mode .experience-summary {
-    background-color: #1f1f1f !important;
-    color: #f0f0f0 !important;
+    background-color: #121212 !important;
+    color: #121212 !important;
 }
 
 .dark-mode .skill-card p,
@@ -612,5 +628,124 @@ footer p {
 .dark-mode .testimonial-card p,
 .dark-mode .testimonial-card span {
     color: #ccc !important;
+}
+.dark-mode .toggle-btn,
+.dark-mode .carousel-btn,
+.dark-mode .contact-form button,
+.dark-mode #scrollTopBtn,
+.dark-mode .toggle-theme {
+    background-color: #121212;
+    color: #121212;
+    border: 1px solid #121212;
+}
+
+.dark-mode .toggle-btn:hover,
+.dark-mode .carousel-btn:hover,
+.dark-mode .contact-form button:hover,
+.dark-mode #scrollTopBtn:hover,
+.dark-mode .toggle-theme:hover {
+    background-color: #333;
+    color: #121212;
+}
+
+/* Atualizando o botão de alternância de tema */
+.dark-mode .toggle-theme {
+    background-color: #121212;
+    border: 2px solid #121212;
+    color: #121212;
+}
+
+.dark-mode .toggle-theme:hover {
+    background-color: #333;
+    color: #fff;
+}
+.dark-mode .sidebar {
+    background-color: #121212;
+    color: #121212;
+    border-right: 1px solid #121212;
+}
+
+/* Estilo para os botões no modo escuro */
+.dark-mode .toggle-btn,
+.dark-mode .carousel-btn,
+.dark-mode .contact-form button,
+.dark-mode #scrollTopBtn,
+.dark-mode .toggle-theme {
+    background-color: #121212;
+    color: #121212;
+    border: 1px solid #444;
+}
+
+.dark-mode .toggle-btn:hover,
+.dark-mode .carousel-btn:hover,
+.dark-mode .contact-form button:hover,
+.dark-mode #scrollTopBtn:hover,
+.dark-mode .toggle-theme:hover {
+    background-color: #121212;
+    color: #121212;
+}
+
+/* Barra lateral (skills-content) */
+.dark-mode .sidebar-expanded .skills-content {
+    background-color: #1d1d1f;
+    color: #121212;
+}
+
+/* Botão toggle da barra lateral no modo escuro */
+
+/* Alterações no modo escuro para o Header */
+.dark-mode header nav {
+    background-color: #121212;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Ajuste no sombreamento */
+}
+
+/* Alterando a cor do texto para garantir contraste adequado no modo escuro */
+.dark-mode header nav ul li a {
+    color: #f0f0f0; /* Cor de texto no modo escuro */
+}
+
+.dark-mode footer {
+    background-color: #121212;
+    color: #f0f0f0;
+}
+
+/* Alterações no botão de alternância do tema */
+.dark-mode .toggle-theme {
+    background-color: #121212;
+    color: #121212;
+    border: 2px solid #121212;
+}
+
+.dark-mode .toggle-theme:hover {
+    background-color: #121212;
+    color: #121212;
+}
+
+/* Garantir que o texto de botões e interações no modo escuro seja visível */
+.dark-mode .contact-form input,
+.dark-mode .contact-form textarea {
+    background-color: #2a2a2d;
+    border: 1px solid #444;
+    color: #121212;
+}
+
+.dark-mode .contact-form button {
+    background-color: #333;
+    border: 1px solid #444;
+    color: #f0f0f0;
+}
+
+/* Ajustando o scroll no modo escuro */
+.dark-mode ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.dark-mode ::-webkit-scrollbar-thumb {
+    background-color: #333;
+}
+
+.dark-mode ::-webkit-scrollbar-track {
+    background-color: #121212;
 }
 
