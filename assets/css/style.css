@@ -105,42 +105,82 @@ h2 {
 
 p {
     font-size: 16px;
-    color: #555;
+    color: #f0f0f09f;
 }
 
-/* About Section */
 #about {
-    background-color: #fff;
+    padding: 60px 0;
+    background-color: #f0f0f0; /* Deixa o fundo da seção transparente */
+    color: #f0f0f0; /* Cor do texto */
 }
 
+/* Container que envolve o conteúdo */
 .about-container {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-    text-align: left;
-}
-
-.about-text {
-    flex: 1;
-}
-
-.about-image {
-    flex: 1;
-    display: flex;
     justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #2a2a2d;
+    border-radius: 30px;
+    gap: 30px;
+    flex-wrap: wrap; /* para quebrar no mobile */
+  }
+  
+/* Retângulo que envolve o texto */
+.about-text-wrapper {
+    flex: 1;
+    padding: 40px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+/* Estilo para o texto */
+.about-text {
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    flex: 1;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #f0f0f0; /* Cor do texto para um contraste mais suave */
 }
 
+/* Título do texto */
+.about-text h2 {
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #f0f0f0; /* Cor para o título */
+}
+
+/* Estilo para a imagem */
+.about-image {
+    padding: 10px, 10px, 10px, 10px;
+    flex: 1;
+    text-align: center;
+}
+
+/* A imagem centralizada */
 .about-image img {
+    max-width: 400px;
     width: 100%;
-    max-width: 300px;
+    height: auto;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-}
-
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
 /* Experience Section */
 #experience {
-    background-color: #2a2a2d;
+    margin-top: 0px;
+    background-color: #f0f0f0;
     color: #fff;
 }
 
@@ -151,6 +191,9 @@ p {
 
 .experience-item {
     margin-bottom: 30px;
+}
+.experience-item h2{
+    color: #2a2a2d;
 }
 
 .experience-item h3 {
@@ -163,22 +206,30 @@ p {
     font-size: 14px;
     display: block;
     margin-bottom: 10px;
-    color: #bbb;
+    color: #2a2a2d;
 }
 
 .experience-item p {
     font-size: 16px;
-    color: #ddd;
+    color: #2a2a2d;;
 }
 .experience-details {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.6s ease;
-}
-
-.experience-item.open .experience-details {
-  max-height: 200px; /* ou mais, se a descrição for longa */
-}
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.6s ease, padding 0.6s ease;
+    background-color: #ffffff;
+    padding: 0 1rem; /* padding horizontal inicialmente */
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    color: #2a2a2d;
+  }
+  
+  /* Quando estiver aberto, aumenta o padding */
+  .experience-item.open .experience-details {
+    max-height: 500px; /* ou mais dependendo do conteúdo */
+    padding: 1rem;
+  }
 
 .experience-summary {
   display: flex;
@@ -208,28 +259,108 @@ p {
 .toggle-btn:hover {
   background-color: #666;
 }
+#skills {
+    background-color: #f0f0f0;
+    padding: 60px 0;
+    text-align: center;
+}
 
-/* Work Section */
-#work {
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 colunas */
+    gap: 20px; /* espaçamento entre os cards */
+  }
+
+.skill-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+}
+
+.skill-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #1d1d1f;
+}
+
+.skill-card p {
+    font-size: 14px;
+    color: #666;
+}
+#testimonials {
+    padding: 60px 0;
     background-color: #f0f0f0;
 }
 
+.testimonial-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 800px;
+    margin: 40px auto 0;
+}
+
+.testimonial-card {
+    background-color: #1d1d1f;
+    color: #eee;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.testimonial-card p {
+    font-size: 16px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.testimonial-card span {
+    font-size: 14px;
+    color: #bbb;
+}
+
+/* Work Section */
+#work,
+#work .container,
+.carousel-wrapper,
+.carousel-container,
+.carousel-track {
+  overflow: visible;
+  position: relative;
+   /* necessário para z-index funcionar corretamente */
+}
+#work{
+    padding-bottom: -50px;
+}
+
+.carousel-container {
+    padding-top: 60px;
+    overflow: hidden; /* ← mantém visíveis só 3 itens */
+    width: 100%;
+    height: auto;
+  }
+  
 .carousel-wrapper {
     position: relative;
     display: flex;
     align-items: center;
     margin-top: 40px;
-  }
-  
-  .carousel-container {
-    overflow: hidden;
-    width: 100%;
+    overflow: visible; /* ← Adicione isso */
   }
   
   .carousel-track {
     display: flex;
     transition: transform 0.5s ease;
-  }
+    padding: 0 20px; /* espaço para que o hover dos itens laterais não seja cortado */
+    box-sizing: content-box; /* garante que padding não afete o tamanho total */
+  }  
   
   .carousel-btn {
     background-color: rgba(0, 0, 0, 0.5);
@@ -249,6 +380,15 @@ p {
     flex: 0 0 calc(100% / 3);
     box-sizing: border-box;
     padding: 0 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    transform-origin: bottom center;
+    z-index: 1;
+  }
+  
+  .work-item:hover {
+    transform: scale(1.08);
+    z-index: 10; /* Sobe acima dos vizinhos */
   }
 
 /* Contact Section */
@@ -292,7 +432,25 @@ p {
 .contact-form button:hover {
     background-color: #333;
 }
+#scrollTopBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #1d1d1f;
+    color: #fff;
+    border: none;
+    padding: 12px 16px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    display: none;
+    z-index: 999;
+}
 
+#scrollTopBtn:hover {
+    background-color: #333;
+}
 /* Footer */
 footer {
     background-color: #1d1d1f;
