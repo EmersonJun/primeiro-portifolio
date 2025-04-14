@@ -133,3 +133,13 @@ let currentIndex = 0;
     toggleBtn.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
   });
 
+
+
+
+
+
+  function toggleSidebar() {
+    const section = document.getElementById('skills');
+    section.classList.toggle('sidebar-expanded');
+    section.classList.toggle('sidebar-collapsed');
+  }
