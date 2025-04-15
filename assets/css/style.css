@@ -42,7 +42,19 @@ h2 {
     color: #333; /* Cor do texto */
     margin-top: 50px; /* Margem superior para dar um espaço */
   }
-
+  .icons img {
+    width: 100px;
+    height: 100px;
+    margin: 0 10px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    padding: 5px;
+  }
+  
+  .icons img:hover {
+    transform: scale(1.5);
+    border-color: #666; /* muda a cor da borda no hover */
+  }
 header nav .logo {
     font-size: 24px;
     font-weight: 600;
@@ -61,7 +73,7 @@ header nav ul li {
 
 header nav ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #f0f0f0;
     font-weight: 500;
     text-transform: uppercase;
     font-size: 14px;
@@ -86,6 +98,7 @@ header nav ul li a {
 .hero p {
     font-size: 18px;
     margin-bottom: 20px;
+    color: #f0f0f0;
 }
 
 .hero .icons img {
@@ -595,7 +608,7 @@ footer p {
 
 /* Estilos do modo escuro */
 .dark-mode {
-    background-color: #1d1d1f;
+    background-color: #2b2828;
     color: #f0f0f0;
 }
 /* Barra de rolagem no modo escuro */
@@ -618,10 +631,12 @@ footer p {
 .dark-mode footer,
 .dark-mode .testimonial-card,
 .dark-mode .about-container,
-.dark-mode .skill-card,
 .dark-mode .experience-summary {
-    background-color: #121212 !important;
+    background-color: #1d1d1f !important;
     color: #121212 !important;
+}
+.dark-mode .skill-card{
+    background-color: #222 !important;
 }
 
 .dark-mode .skill-card p,
@@ -629,6 +644,12 @@ footer p {
 .dark-mode .testimonial-card p,
 .dark-mode .testimonial-card span {
     color: #ccc !important;
+}
+.dark-mode .sidebar-collapsed,
+.dark-mode .sidebar-expanded {
+    background-color: #121212 !important;
+    color: #f0f0f0 !important;
+    border-color: transparent !important;
 }
 .dark-mode .toggle-btn,
 .dark-mode .carousel-btn,
@@ -725,14 +746,15 @@ footer p {
 /* Garantir que o texto de botões e interações no modo escuro seja visível */
 .dark-mode .contact-form input,
 .dark-mode .contact-form textarea {
-    background-color: #2a2a2d;
-    border: 1px solid #444;
-    color: #121212;
+    background-color: #121212 !important;
+    background-color: #121212 ;
+    border: 1px solid #121212;
+    color: #f0f0f0;
 }
 
 .dark-mode .contact-form button {
-    background-color: #333;
-    border: 1px solid #444;
+    background-color: #121212 !important;
+    border: 3px solid #121212;
     color: #f0f0f0;
 }
 
