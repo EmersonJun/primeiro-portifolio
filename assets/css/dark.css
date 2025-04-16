@@ -1,0 +1,181 @@
+.dark-mode {
+    background-color: #2b2828;
+    color: #f0f0f0;
+}
+/* Barra de rolagem no modo escuro */
+.dark-mode ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.dark-mode ::-webkit-scrollbar-thumb {
+    background-color: #121212;
+    border-radius: 5px;
+    border: 3px solid #121212;
+}
+
+.dark-mode ::-webkit-scrollbar-track {
+    background-color: #333;
+}
+
+.dark-mode header,
+.dark-mode footer,
+.dark-mode .testimonial-card,
+.dark-mode .about-container,
+.dark-mode .experience-summary {
+    background-color: #1d1d1f !important;
+    color: #121212 !important;
+}
+.dark-mode .skill-card{
+    background-color: #222 !important;
+}
+
+.dark-mode .skill-card p,
+.dark-mode .experience-details,
+.dark-mode .testimonial-card p,
+.dark-mode .testimonial-card span {
+    color: #ccc !important;
+}
+.dark-mode .sidebar-collapsed,
+.dark-mode .sidebar-expanded {
+    background-color: #121212 !important;
+    color: #f0f0f0 !important;
+    border-color: transparent !important;
+}
+.dark-mode .toggle-btn,
+.dark-mode .carousel-btn,
+.dark-mode .contact-form button,
+.dark-mode #scrollTopBtn,
+.dark-mode .toggle-theme {
+    background-color: #121212;
+    color: #121212;
+    border: 1px solid #121212;
+}
+
+.dark-mode .toggle-btn:hover,
+.dark-mode .carousel-btn:hover,
+.dark-mode .contact-form button:hover,
+.dark-mode #scrollTopBtn:hover,
+.dark-mode .toggle-theme:hover {
+    background-color: #333;
+    color: #121212;
+}
+
+/* Atualizando o botão de alternância de tema */
+.dark-mode .toggle-theme {
+    background-color: #121212;
+    border: 2px solid #121212;
+    color: #121212;
+}
+
+.dark-mode .toggle-theme:hover {
+    background-color: #333;
+    color: #fff;
+}
+.dark-mode .sidebar {
+    background-color: #121212;
+    color: #121212;
+    border-right: 1px solid #121212;
+}
+
+/* Estilo para os botões no modo escuro */
+.dark-mode .toggle-btn,
+.dark-mode .carousel-btn,
+.dark-mode .contact-form button,
+.dark-mode #scrollTopBtn,
+.dark-mode .toggle-theme {
+    background-color: #121212 !important;
+    color: #121212;
+    border: 1px solid #121212;
+}
+.dark-mode .btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #121212 !important; /* Fundo mais claro que o bg escuro */
+    color: #f0f0f0;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+    border: 1px solid #121212;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .dark-mode .btn:hover {
+    background-color: #121212 !important;
+    color: #fff;
+  }
+.dark-mode .toggle-btn:hover,
+.dark-mode .carousel-btn:hover,
+.dark-mode .contact-form button:hover,
+.dark-mode #scrollTopBtn:hover,
+.dark-mode .toggle-theme:hover {
+    background-color: #121212;
+    color: #121212;
+}
+
+/* Barra lateral (skills-content) */
+.dark-mode .sidebar-expanded .skills-content {
+    background-color: #1d1d1f;
+    color: #121212;
+}
+
+/* Botão toggle da barra lateral no modo escuro */
+
+/* Alterações no modo escuro para o Header */
+.dark-mode header nav {
+    background-color: #121212;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Ajuste no sombreamento */
+}
+
+/* Alterando a cor do texto para garantir contraste adequado no modo escuro */
+.dark-mode header nav ul li a {
+    color: #f0f0f0; /* Cor de texto no modo escuro */
+}
+
+.dark-mode footer {
+    background-color: #121212;
+    color: #f0f0f0;
+}
+
+/* Alterações no botão de alternância do tema */
+.dark-mode .toggle-theme {
+    background-color: #121212;
+    color: #121212;
+    border: 2px solid #121212;
+}
+
+.dark-mode .toggle-theme:hover {
+    background-color: #121212;
+    color: #121212;
+}
+
+/* Garantir que o texto de botões e interações no modo escuro seja visível */
+.dark-mode .contact-form input,
+.dark-mode .contact-form textarea {
+    background-color: #121212 !important;
+    background-color: #121212 ;
+    border: 1px solid #121212;
+    color: #f0f0f0;
+}
+
+.dark-mode .contact-form button {
+    background-color: #121212 !important;
+    border: 3px solid #121212;
+    color: #f0f0f0;
+}
+
+/* Ajustando o scroll no modo escuro */
+.dark-mode ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.dark-mode ::-webkit-scrollbar-thumb {
+    background-color: #333;
+}
+
+.dark-mode ::-webkit-scrollbar-track {
+    background-color: #121212;
+}
+

@@ -1,0 +1,207 @@
+@media screen and (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+        font-size: 28px;
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        z-index: 1001;
+      }
+    
+      header nav ul {
+        transition: max-height 0.4s ease-in-out, opacity 0.3s ease;
+        overflow: hidden;
+        max-height: 0;
+        opacity: 0;
+      }
+      
+      header nav ul.active {
+        display: flex;
+        flex-direction: column;
+        max-height: 500px; /* Valor suficiente para o conteúdo */
+        opacity: 1;
+      }
+  
+      .nav-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: #1d1d1f;
+      }
+      
+      /* Nome/Logo */
+      .logo {
+        font-size: 24px;
+        color: white;
+        font-weight: bold;
+        white-space: nowrap; /* força tudo em uma linha só */
+      }
+      
+      /* Botão de tema */
+      .theme-toggle {
+        font-size: 20px;
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+      }
+      
+      /* Esconde qualquer menu se ainda houver */
+      nav ul {
+        display: none !important;
+      }
+    .hero h1 {
+      font-size: 32px;
+      text-align: center;
+    }
+  
+    .hero p {
+      font-size: 16px;
+      text-align: center;
+    }
+  
+    .icons img {
+      width: 60px;
+      height: 60px;
+    }
+  
+    .about-container {
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    .about-text-wrapper {
+      padding: 20px;
+    }
+  
+    .about-image img {
+      max-width: 100%;
+    }
+  
+    .experience-summary {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  
+    #skills {
+        flex-direction: column-reverse; /* Inverte a ordem dos filhos */
+        height: auto;
+        padding: 20px 10px;
+      }
+      
+      /* Garante que o conteúdo das skills suba */
+      .sidebar-expanded .skills-content {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 1rem 0;
+        order: -1; /* Faz o menu subir para cima */
+        animation: slideUp 0.4s ease-out forwards;
+      }
+      @keyframes slideUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }      
+  
+    .toggle-button {
+      width: 100%;
+      height: auto;
+      padding: 10px;
+      position: relative;
+      top: unset;
+      left: unset;
+    }
+  
+    .skill-card {
+      width: 100%;
+    }
+  
+    .work-overlay {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+        padding: 0 10px; /* Pequeno padding lateral para mobile */
+      }
+      .work-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        padding: 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    
+      .work-item img {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+        border-radius: 10px;
+        margin: 0 auto 15px; /* Centraliza e dá espaçamento abaixo */
+        display: block;
+      }
+      
+      .carousel-track {
+        display: flex;
+        width: 100%;
+      }
+      
+      .carousel-wrapper {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden; /* <- Isso resolve o scroll lateral */
+      }
+      
+      .carousel-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10;
+        background-color: #333;
+        color: white;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+        padding: 10px;
+      }
+      
+      .carousel-btn.left {
+        left: 10px;
+      }
+      
+      .carousel-btn.right {
+        right: 10px;
+      }
+  
+    .contact-form {
+      padding: 0 10px;
+    }
+  
+    #scrollTopBtn {
+      bottom: 20px;
+      right: 20px;
+    }
+  
+    .logo-wrapper {
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+    }
+}
