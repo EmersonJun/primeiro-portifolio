@@ -13,3 +13,5 @@ let currentIndex = 0;
 
     track.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
   }
+
+  
