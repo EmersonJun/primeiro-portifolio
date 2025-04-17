@@ -1,4 +1,7 @@
 /* Resetando as margens e paddings */
+html {
+  scroll-behavior: smooth;
+}
 * {
     margin: 0;
     padding: 0;
@@ -144,6 +147,10 @@ p {
     background-color: #f0f0f0; /* Deixa o fundo da seção transparente */
     color: #f0f0f0; /* Cor do texto */
 }
+#readMoreBtn {
+  display: none;
+}
+
 
 /* Container que envolve o conteúdo */
 .about-container {
