@@ -1,0 +1,117 @@
+:root {
+    --primary-color: #f0f0f0;
+    --secondary-color: #f0f0f0;
+    --bg-light: #f0f4f8;
+    --bg-dark: #121212;
+    --text-color: #333;
+    --muted-text: #777;
+    --card-bg: #ffffff;
+    --card-bg-dark: #1f1f1f;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    animation: fadeIn 1s ease-out;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .thank-you-container {
+    background: var(--card-bg);
+    padding: 50px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    max-width: 500px;
+    animation: fade-in-up 1s ease-out;
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 1.15rem;
+    color: var(--text-color);
+  }
+
+  .signature {
+    margin-top: 30px;
+    font-style: italic;
+    color: var(--muted-text);
+    font-size: 0.95rem;
+  }
+
+  .btn {
+    display: inline-block;
+    margin-top: 30px;
+    background-color: var(--secondary-color);
+    color: #1f1f1f;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn:hover {
+    background-color: #f0f0f0;
+  }
+
+  @keyframes fade-in-up {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    } to {
+      opacity: 1;
+    }
+  }
+
+  /* Modo escuro */
+  .dark-mode {
+    background-color: var(--bg-dark);
+    color: #f0f0f0;
+  }
+
+  .dark-mode .thank-you-container {
+    background-color: var(--card-bg-dark);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  }
+
+  .dark-mode h1 {
+    color: var(--primary-color);
+  }
+
+  .dark-mode p,
+  .dark-mode .signature {
+    color: #f0f0f0;
+  }
+
+  .dark-mode .btn {
+    background-color: #f0f0f0;
+  }
+
+  .dark-mode .btn:hover {
+    background-color: #f0f0f0;
+  }

@@ -3,87 +3,242 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio - Nome Sobrenome</title>
+    <title>Portfólio - Emerson Junior</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/dark.css">
+    <link rel="stylesheet" href="./assets/css/cell.css">
+
 </head>
 <body>
 
     <!-- Header -->
     <header>
         <nav>
-            <div class="logo">Nome Sobrenome</div>
+          <button id="themeToggle" class="toggle-theme">🌙</button>
+            <div class="logo fade-in-up">Emerson Junior</div>
             <ul>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#work">Trabalhos</a></li>
-                <li><a href="#contact">Contato</a></li>
+                <li><a href="#about" class="fade-in-up">Sobre</a></li>
+                <li><a href="#work" class="fade-in-up">Trabalhos</a></li>
+                <li><a href="#experience" class="fade-in-up">Experiencias</a></li>
+                <li><a href="#testimonials" class="fade-in-up">Depoimentos</a></li>
+                <li><a href="#skills" class="fade-in-up">Habilidades</a></li>
+                <li><a href="#contact" class="fade-in-up">Contato</a></li>
             </ul>
         </nav>
-        <div class="hero">
-            <h1>Desenvolvedor Web | Criativo | Apaixonado por Tecnologia</h1>
-            <p>Transformando ideias em experiências digitais incríveis</p>
+        <div class="hero fade-in-up">
+            <h1>Desenvolvedor Front End</h1>
+            <p>Não é a linguagem de programação que define o programador, mas sim sua lógica.</p>
+            <div class="icons">
+                <img src="./assets/img/cSharp.png" alt="C#">
+                <img src="./assets/img/github.png" alt="github">
+                <img src="./assets/img/java.png" alt="java">
+                <img src="./assets/img/php.png" alt="php">
+                <img src="./assets/img/javascript.png" alt="js">
+            </div>
         </div>
     </header>
 
     <!-- About Section -->
-    <section id="about" class="section">
-        <div class="container">
-            <h2>Sobre Mim</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus hendrerit massa, eu mollis lectus vestibulum eget. Integer eget mauris at ante elementum efficitur. Etiam a pharetra nulla. Aenean id augue nunc. Integer tincidunt venenatis urna, eu scelerisque arcu tempor eget. Vivamus auctor orci felis, ac faucibus ipsum sodales sit amet. Fusce lobortis felis eget libero lobortis, sed pretium eros volutpat. Integer malesuada ipsum in ex suscipit volutpat. Pellentesque posuere augue vel magna placerat, at fringilla tortor fermentum. Curabitur sollicitudin massa magna, at euismod lectus tincidunt ut. Nam pellentesque euismod metus. Ut cursus tortor felis, vel pretium lectus tincidunt id. Nam ac felis vitae libero eleifend auctor.</p>
-            <p>Nulla ac gravida erat. Aliquam et mi sit amet enim sodales placerat non ac enim. Sed bibendum magna euismod dolor congue lobortis. Vestibulum consectetur metus eu tincidunt vestibulum. In congue, eros id fermentum tincidunt, orci nulla hendrerit lorem, at tempus magna odio id tortor. Integer fermentum gravida libero, sit amet tincidunt est volutpat vel. Curabitur cursus ligula a mauris tempor, ac euismod lorem fringilla. Aenean viverra, erat at interdum tincidunt, ex orci consequat nisi, nec malesuada justo mi in purus. Fusce consequat vestibulum ipsum at laoreet. Pellentesque consectetur orci eu vehicula aliquam. Integer nec dui non est scelerisque faucibus. Aliquam erat volutpat.</p>
-        </div>
-    </section>
-
-    <!-- Work Section -->
-    <section id="work" class="section bg-light">
-        <div class="container">
-            <h2>Meus Trabalhos</h2>
-            <div class="work-grid">
-                <div class="work-item">
-                    <img src="https://via.placeholder.com/600x400" alt="Projeto 1">
-                    <div class="work-overlay">
-                        <h3>Projeto 1</h3>
-                        <p>Descrição do projeto 1.</p>
-                    </div>
-                </div>
-                <div class="work-item">
-                    <img src="https://via.placeholder.com/600x400" alt="Projeto 2">
-                    <div class="work-overlay">
-                        <h3>Projeto 2</h3>
-                        <p>Descrição do projeto 2.</p>
-                    </div>
-                </div>
-                <div class="work-item">
-                    <img src="https://via.placeholder.com/600x400" alt="Projeto 3">
-                    <div class="work-overlay">
-                        <h3>Projeto 3</h3>
-                        <p>Descrição do projeto 3.</p>
-                    </div>
-                </div>
+    <section id="about" class="section fade-in-up">
+        <div class="container about-container">
+            <div class="about-text">
+                <h2>Sobre Mim</h2>
+                <p id="aboutParagraph">
+                  Meu nome é Emerson Junior e sou apaixonado por tecnologia desde a infância. Cresci explorando o mundo dos jogos e me encantando pela forma como as coisas funcionam por trás das telas. Isso despertou meu interesse pela programação, onde encontrei uma forma de transformar ideias em soluções digitais.
+              
+                  Atualmente, estou focado em evoluir na área de desenvolvimento de software, buscando aprender constantemente novas linguagens, técnicas e ferramentas. Meu objetivo é criar soluções criativas e eficientes, sempre com o intuito de resolver problemas reais e trazer inovação.
+              
+                  Acredito que o aprendizado contínuo é essencial para crescer como profissional, e estou sempre em busca de novos desafios que me permitam aprimorar minhas habilidades. A tecnologia, para mim, é mais que uma profissão — é uma paixão que me motiva a seguir evoluindo.
+                </p>
+                <button id="readMoreBtn" style="display: none;">Ler mais</button>
+            </div>
+            <div class="about-image">
+                <img src="./assets/img/1000475004.jpg" alt="Minha Foto">
             </div>
         </div>
+        
+    </section>
+    
+    <section id="work" class="section bg-light fade-in-up">
+      <div class="container">
+        <h2>Meus Projetos</h2>
+    
+        <div class="carousel-wrapper">
+          <button class="carousel-btn left" onclick="scrollCarousel(-1)">&#10094;</button>
+    
+          <div class="carousel-container" id="carouselContainer">
+            <div class="carousel-track" id="carouselTrack">
+              <div class="work-item">
+                <img src="./assets/img/MarioRun.png" alt="Projeto 1">
+                <div class="work-overlay">
+                  <h3>Mario Run</h3>
+                  <a href="https://mariorun-project-ejun.netlify.app/" class="btn" target="_blank">Ver Projeto</a>
+                </div>
+              </div>
+              <div class="work-item">
+                <img src="./assets/img/Relogio.png" alt="Projeto 2">
+                <div class="work-overlay">
+                  <h3>Relogio Digital</h3>
+                  <a href="https://relogio-project-ejun.netlify.app/" class="btn" target="_blank">Ver Projeto</a>
+                </div>
+              </div>
+              <div class="work-item">
+                <img src="./assets/img/Pokedex.png" alt="Projeto 3">
+                <div class="work-overlay">
+                  <h3>Pokedex</h3>
+                  <a href="https://pokedex-project-ejun.netlify.app/" class="btn" target="_blank">Ver Projeto</a>
+                </div>
+              </div>
+              <div class="work-item">
+                <img src="./assets/img/Conversor.png" alt="Projeto 4">
+                <div class="work-overlay">
+                  <h3>Conversor</h3>
+                  <a href="https://conversor-project-ejun.netlify.app/" class="btn" target="_blank">Ver Projeto</a>
+                </div>
+              </div>
+              <div class="work-item">
+                <img src="./assets/img/Randomizador.png" alt="Projeto 5">
+                <div class="work-overlay">
+                  <h3>Randomizador</h3>
+                  <a href="https://randomizador-project-ejun.netlify.app/" class="btn" target="_blank">Ver Projeto</a>
+                </div>
+              </div>
+              <div class="work-item">
+                <img src="./assets/img/Jokenpo.png" alt="Projeto 5">
+                <div class="work-overlay">
+                  <h3>Jokenpô</h3>
+                  <p>Jogo web de Jokenpô.<p><a href="https://jokenpo-project-ejun.netlify.app/" class="btn" target="_blank">Ver Projeto</a>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <button class="carousel-btn right" onclick="scrollCarousel(1)">&#10095;</button>
+        </div>
+      </div>
     </section>
 
+
+    <section id="experience" class="section bg-dark fade-in-up">
+      <div class="container">
+        <h2 style="color: #2a2a2d;">Experiências</h2>
+        <div class="experience-timeline">
+          <div class="experience-item">
+            <div class="experience-summary">
+              <img src="./assets/img/programacao-da-web.png" alt="Ícone Dev Front-End">
+              <h3>Estagiario de TI</h3>
+              <button class="toggle-btn">Ver mais</button>
+            </div>
+            <div class="experience-details">
+              <span>Empresa Auto Center Camargo - mai 2021 ~ Atualmente</span>
+              <p>Atuar como profissional de TI em um auto center foi uma experiência desafiadora e enriquecedora. Fui responsável pelo suporte técnico, manutenção de sistemas e infraestrutura de rede, além de auxiliar na modernização de processos internos. A rotina exigia agilidade, proatividade e foco na resolução de problemas. Aprimorei minhas habilidades técnicas e minha capacidade de adaptação a ambientes dinâmicos. A experiência contribuiu significativamente para meu desenvolvimento profissional e pessoal.</p>
+            </div>
+          </div>
+    
+          <div class="experience-item">
+            <div class="experience-summary">
+              <img src="./assets/img/programacao-da-web.png" alt="Ícone Estágio">
+              <h3>Graduação em análise e desenvolvimento de sistemas</h3>
+              <button class="toggle-btn">Ver mais</button>
+            </div>
+            <div class="experience-details">
+              <span>UP - fev 2024 ~ Dez 2025</span>
+              <p>Cursar Análise e Desenvolvimento de Sistemas na Universidade Positivo tem sido uma experiência sólida e transformadora. A formação oferece uma base técnica consistente em programação, banco de dados, redes e desenvolvimento de software. Além disso, proporciona contato com metodologias ágeis e boas práticas do mercado. O curso tem ampliado minha visão crítica e minha capacidade de propor soluções tecnológicas eficientes. Essa trajetória tem sido fundamental para meu crescimento acadêmico e preparação para os desafios da área de TI.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!-- Testimonials Section -->
+<section id="testimonials" class="section bg-dark fade-in-up">
+  <div class="container">
+      <h2 style="color: #2a2a2d;">Depoimentos</h2>
+      <div class="testimonial-wrapper">
+          <div class="testimonial-card">
+              <p>"O Emerson sempre entrega projetos com qualidade e rapidez. Sua dedicação faz toda a diferença!"</p>
+              <span>- João Silva, Analista de Sistemas</span>
+          </div>
+          <div class="testimonial-card">
+              <p>"Tive a honra de trabalhar com ele em um projeto web. Excelente profissional e muito proativo!"</p>
+              <span>- Marina Costa, Desenvolvedora Front End</span>
+          </div>
+      </div>
+  </div>
+</section>
+
+<h2>Habilidades</h2>  
+<section id="skills" class="sidebar-expanded">
+  <button class="toggle-button" onclick="toggleSidebar()">☰</button>
+
+  <!-- Imagem ao lado do menu -->
+  
+
+  <div class="skills-content">
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3>HTML & CSS</h3>
+        <p>Criação de layouts modernos, responsivos e acessíveis.</p>
+      </div>
+      <div class="skill-card">
+        <h3>JavaScript</h3>
+        <p>Interatividade, manipulação de DOM e integração com APIs.</p>
+      </div>
+      <div class="skill-card">
+        <h3>Java</h3>
+        <p>Desenvolvimento de aplicações robustas com orientação a objetos.</p>
+      </div>
+      <div class="skill-card">
+        <h3>C#</h3>
+        <p>Criação de sistemas com .NET e desenvolvimento de aplicações desktop e web.</p>
+      </div>
+      <div class="skill-card">
+        <h3>PHP</h3>
+        <p>Desenvolvimento backend de sites dinâmicos e integração com bancos de dados.</p>
+      </div>
+      <div class="skill-card">
+        <h3>Git & GitHub</h3>
+        <p>Versionamento de código e colaboração em equipe.</p>
+      </div>
+    </div>
+  </div>
+    
+</section>
     <!-- Contact Section -->
-    <section id="contact" class="section">
+    <section id="contact" class="section fade-in-up">
         <div class="container">
             <h2>Contato</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet libero ut ligula lacinia sodales a sed enim. Sed egestas neque in nulla gravida, vel venenatis eros faucibus. Cras fermentum purus et ligula facilisis, id tempus elit iaculis. Morbi ut fermentum ligula, a porttitor lorem. In id elit sapien. Nulla sed felis id orci pretium feugiat nec id lorem. Etiam fringilla ante purus, in convallis ipsum egestas ac. Duis ac nibh a augue volutpat iaculis at non elit. Nunc a mollis purus. Sed viverra quam sit amet leo tempus, vel tempor est consectetur. Suspendisse dictum nulla velit, sit amet tincidunt purus feugiat vitae. Curabitur viverra varius magna sit amet tempus. Fusce fringilla orci vel nulla interdum, eget egestas sapien eleifend. Etiam fringilla dui non libero venenatis, a porttitor ante euismod. Sed pharetra vehicula nisl, a pretium velit tincidunt eu.</p>
+            <form class="contact-form" action="https://formsubmit.co/emersonnjunior2006@gmail.com" method="POST">
+                <input type="text" name="name" placeholder="Seu nome" required>
+                <input type="email" name="email" placeholder="Seu e-mail" required>
+                <textarea name="message" placeholder="Sua mensagem..." required></textarea>
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5501/obrigado.html">
+                <button type="submit">enviar</button>
+            </form>
         </div>
     </section>
-
+    <button id="scrollTopBtn" title="Voltar ao topo">↑</button>
     <!-- Footer -->
     <footer>
         <div class="container">
             <div class="social-links">
-                <a href="#" class="social-link">GitHub</a>
-                <a href="#" class="social-link">LinkedIn</a>
-                <a href="#" class="social-link">Twitter</a>
+                <a href="https://github.com/EmersonJun" class="social-link">GitHub</a>
+                <a href="https://www.linkedin.com/in/emerson-jun" class="social-link">LinkedIn</a>
+                <a href="https://www.instagram.com/erminkkj?igsh=MTJqaW80bjNhMjQyZQ==" class="social-link">Instagram</a>
+                <a href="https://wa.me/5541987283543" class="social-link">Whatsapp</a>
             </div>
-            <p>&copy; 2025 Nome Sobrenome. Todos os direitos reservados.</p>
+            <p>&copy; 2025 Emerson Junior. Todos os direitos reservados.</p>
         </div>
     </footer>
-
-    <script src="./assets/js/script.js"></script>
 </body>
+ <script src="./assets/js/script.js"></script>
+ <script src="./assets/js/sidebar.js"></script>
+ <script src="./assets/js/darkTheme.js"></script>
+ <script src="./assets/js/scrollTop.js"></script>
+ <script src="./assets/js/experience.js"></script>
+ <script src="./assets/js/carrocel.js"></script>
+ <script src="./assets/js/readMore.js"></script>
 </html>
