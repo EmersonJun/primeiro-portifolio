@@ -393,36 +393,79 @@ p {
   
 
 #testimonials {
-    padding: 60px 0;
-    background-color: #f0f0f0;
+  background-color: #f0f0f0;
+  padding: 40px 20px;
 }
 
-.testimonial-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    max-width: 800px;
-    margin: 40px auto 0;
+.testimonials-section h2 {
+  text-align: center;
+  color: #2a2a2d;
+  margin-bottom: 30px;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Sempre 3 por linha */
+  gap: 20px;
+  justify-items: center;
 }
 
 .testimonial-card {
-    background-color: #1d1d1f;
-    color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  overflow: hidden;
+  width: 100%;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.testimonial-card p {
-    font-size: 16px;
-    font-style: italic;
-    margin-bottom: 10px;
+.testimonial-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
 }
 
 .testimonial-card span {
-    font-size: 14px;
-    color: #bbb;
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  color: #ccc;
+  padding: 10px;
+  background-color: #1d1d1f;
+  width: 100%;
 }
+
+/* Responsivo: ajusta para 1 ou 2 por linha em telas menores */
+@media screen and (max-width: 992px) {
+  .testimonial-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .testimonial-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.testimonial-card a {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+}
+
+.testimonial-img {
+  transition: transform 0.4s ease;
+}
+
+.testimonial-card:hover .testimonial-img {
+  transform: scale(1.05);
+}
+
 
 /* Work Section */
 #work,
