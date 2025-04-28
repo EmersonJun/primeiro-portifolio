@@ -4,7 +4,7 @@ let currentIndex = 0;
     const track = document.getElementById('carouselTrack');
     const itemWidth = track.querySelector('.work-item').offsetWidth + 0; // 20 = padding
     const totalItems = track.children.length;
-    const maxIndex = totalItems - 3;
+    const maxIndex = totalItems - 1;
 
     currentIndex += direction;
 
